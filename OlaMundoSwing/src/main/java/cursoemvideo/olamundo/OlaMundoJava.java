@@ -26,54 +26,97 @@ public class OlaMundoJava extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         lblMensagem = new javax.swing.JLabel();
         btnClick = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(153, 153, 255));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setForeground(new java.awt.Color(153, 153, 255));
+        setPreferredSize(new java.awt.Dimension(400, 300));
+        setResizable(false);
+        setSize(new java.awt.Dimension(400, 300));
 
-        lblMensagem.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        lblMensagem.setForeground(new java.awt.Color(255, 0, 0));
+        jPanel1.setBackground(new java.awt.Color(153, 153, 255));
+        jPanel1.setMinimumSize(new java.awt.Dimension(400, 300));
+        jPanel1.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        lblMensagem.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        lblMensagem.setForeground(new java.awt.Color(255, 255, 255));
         lblMensagem.setText("Sua Mensagem aqui");
+        lblMensagem.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        lblMensagem.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblMensagemMouseClicked(evt);
+            }
+        });
 
-        btnClick.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        btnClick.setBackground(new java.awt.Color(102, 102, 255));
+        btnClick.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnClick.setForeground(new java.awt.Color(255, 255, 255));
         btnClick.setText("Clique aqui");
+        btnClick.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnClickMouseClicked(evt);
+            }
+        });
         btnClick.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnClickActionPerformed(evt);
             }
         });
 
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(135, 135, 135)
+                .addComponent(btnClick)
+                .addContainerGap(140, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(90, 90, 90)
+                .addComponent(lblMensagem, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(58, 58, 58)
+                .addComponent(lblMensagem, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(90, 90, 90)
+                .addComponent(btnClick)
+                .addGap(89, 89, 89))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(88, 88, 88)
-                        .addComponent(lblMensagem))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(135, 135, 135)
-                        .addComponent(btnClick)))
-                .addContainerGap(94, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(37, 37, 37)
-                .addComponent(lblMensagem)
-                .addGap(67, 67, 67)
-                .addComponent(btnClick)
-                .addContainerGap(133, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnClickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClickActionPerformed
         // TODO add your handling code here:
         lblMensagem.setText("Olá, Mundo!");
+
     }//GEN-LAST:event_btnClickActionPerformed
+
+    private void lblMensagemMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblMensagemMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblMensagemMouseClicked
+
+    private void btnClickMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnClickMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnClickMouseClicked
 
     /**
      * @param args the command line arguments
@@ -112,6 +155,7 @@ public class OlaMundoJava extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnClick;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblMensagem;
     // End of variables declaration//GEN-END:variables
 }
