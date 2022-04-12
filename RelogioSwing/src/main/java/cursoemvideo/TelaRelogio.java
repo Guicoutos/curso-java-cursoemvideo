@@ -55,6 +55,8 @@ public class TelaRelogio extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(102, 102, 102));
         jLabel4.setText("Clique no botão");
 
+        btbHora.setBackground(new java.awt.Color(51, 102, 255));
+        btbHora.setForeground(new java.awt.Color(255, 255, 255));
         btbHora.setText("Clique aqui");
         btbHora.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
