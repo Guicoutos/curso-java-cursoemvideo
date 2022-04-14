@@ -198,6 +198,18 @@ public class telaCalc extends javax.swing.JFrame {
         double c = Math.pow(num, 3);
         lblCubo.setText(Double.toString(c));
         
+        // RAIZ QUADRADA
+        double rq = Math.sqrt(num);
+        lblRaizQ.setText(String.format("%.2f",rq));
+        
+        // RAIZ CUBICA
+        double rc = Math.cbrt(num);
+        lblRaizC.setText(String.format("%.2f",rc));
+        
+        // VALOR ABSOLUTO
+        int abs = Math.abs(num);
+        lblAbs.setText(Integer.toString(abs));
+        
         panCalc.setVisible(true);
     }//GEN-LAST:event_btnCalcActionPerformed
 
