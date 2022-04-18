@@ -4,6 +4,8 @@
  */
 package classes;
 
+import java.awt.Font;
+
 /**
  *
  * @author guilherme.silva
@@ -129,6 +131,8 @@ public class telaGenio extends javax.swing.JFrame {
         String f2 = "<html>Errou! Eu pensei no valor " + valor + "</html>";
         
         String res = (valor == num) ? f1:f2;
+        
+        lblFrase.setFont(new Font("Arial Black", Font.PLAIN, 16));
         
         lblFrase.setText(res);
     }//GEN-LAST:event_btnAdivinharActionPerformed
